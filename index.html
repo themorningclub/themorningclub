@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Damarti Academy</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background-image: url("tmcf.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contenedor {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boton-comunidad {
+        width: 100%;
+        height: 90px;
+        background: #2e2e2e;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        padding: 10px 25px;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .boton-comunidad:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    }
+
+    .boton-comunidad img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        margin-right: 20px;
+        border-radius: 50%;
+        background: white;
+        padding: 5px;
+    }
+
+    .boton-texto {
+        flex: 1;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+        .boton-texto {
+            font-size: 1.3rem;
+        }
+
+        .boton-comunidad {
+            height: 75px;
+        }
+
+        .boton-comunidad img {
+            height: 45px;
+            width: 45px;
+        }
+    }
+</style>
 </head>
+
 <body>
-    
+
+<div class="contenedor">
+
+    <a href="#" target="_blank" class="boton-comunidad">
+        <img src="instagram.png" alt="Instagram">
+        <div class="boton-texto">Instagram</div>
+    </a>
+
+    <a href="#" target="_blank" class="boton-comunidad">
+        <img src="tiktok.png" alt="TikTok">
+        <div class="boton-texto">TikTok</div>
+    </a>
+
+    <a href="#" target="_blank" class="boton-comunidad">
+        <img src="web.png" alt="Web">
+        <div class="boton-texto">Web</div>
+    </a>
+
+</div>
+
 </body>
 </html>
